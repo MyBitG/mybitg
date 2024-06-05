@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+
+# Builds
+build
+dist
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Local
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

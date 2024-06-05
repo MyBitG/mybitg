@@ -1,0 +1,42 @@
+{
+  "name": "mybitg",
+  "description": "Free and Open Source Bitcoin Desktop Wallet with Blockchain Explorer and Price Charts",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@1.22.21",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "Bitcoin",
+    "Wallet",
+    "FOSS"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "format": "prettier --cache --check .",
+    "format:fix": "prettier --cache --write .",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "prepare": "husky",
+    "release": "changeset version"
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.1",
+    "prettier-plugin-pkg": "^0.18.1",
+    "prettier-plugin-tailwindcss": "^0.6.1",
+    "turbo": "^2.0.1"
+  }
+}
